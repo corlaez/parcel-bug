@@ -8,8 +8,11 @@ https://github.com/parcel-bundler/parcel/issues/706
 
 watch and build should allow assigning to window object as `parcel index.html``
 
+either with
+* "prestart": "yarn build",
+* "prestart": "yarn watch",
 
-0. yarn dev-serve
+0. yarn start
 1. in my browser console: `foo` should not be undefined
 2. in my browser console: `help` should not be undefined
 3. in my browser console: `helpts` should not be undefined
@@ -17,7 +20,13 @@ watch and build should allow assigning to window object as `parcel index.html``
 ### 😯 Current Behavior
 window object doesn't get any of the assigned props.
 
-0.  yarn build or yarn watch
-1. in my browser console: `foo` should is undefined
-2. in my browser console: `help` should is undefined
-3. in my browser console: `helpts` should is undefined
+either with
+* "prestart": "yarn build",
+* "prestart": "yarn watch",
+
+0.  yarn start
+1. in my browser console: `foo` is undefined
+2. in my browser console: `help` is undefined
+3. in my browser console: `helpts` is undefined
+
+*dev-serve behaves correctly*
