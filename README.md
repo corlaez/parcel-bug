@@ -1,5 +1,7 @@
 # parcel-bug
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/corlaez/parcel-bug.svg)](https://greenkeeper.io/)
+
 Reproduces this issue:
 https://github.com/parcel-bundler/parcel/issues/706
 
